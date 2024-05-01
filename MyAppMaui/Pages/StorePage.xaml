@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyAppMaui.Pages.StorePage"
+             Title="StorePage"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+        <!-- Yatay (horizontal) StackLayout -->
+        <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="red">
+            <!-- Yatay StackLayout içindeki yazı -->
+            <Label Text="Emre Çınar" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" FontSize="24" FontAttributes="Bold" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,5,0,0">
+            <Label Text="Memory Size GB" FontSize="Large" FontAttributes="Bold"/>
+
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,10,0,0">
+            <Button Text="-" Clicked="Button_Clicked" BackgroundColor="Red"/>
+            <Frame CornerRadius="10" BackgroundColor="Black" Padding="10">
+                <Label x:Name="numberLabel" Text="0" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            </Frame>
+            <Button Text="+" Clicked="Button_Clicked_1" BackgroundColor="Red" />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,5,0,0">
+            <Label Text="Storage Size GB" FontSize="Large" FontAttributes="Bold"/>
+
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,10,0,0">
+            <Button Text="-" Clicked="Button_Clicked_2" BackgroundColor="Red"/>
+            <Frame CornerRadius="10" BackgroundColor="Black" Padding="10">
+              
+                <Label x:Name="numberLabel2" Text="0" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            </Frame>
+            <Button Text="+" Clicked="Button_Clicked_3" BackgroundColor="Red" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,5,0,0">
+            
+            <Label Text="Monitor Size inch " FontSize="Large" FontAttributes="Bold"/>
+
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,10,0,0">
+            <Button Text="-" Clicked="Button_Clicked_4" BackgroundColor="Red"/>
+            <Frame CornerRadius="10" BackgroundColor="Black" Padding="10">
+                <Label x:Name="numberLabel3" Text="0" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            </Frame>
+            <Button Text="+" Clicked="Button_Clicked_5" BackgroundColor="Red" />
+        </StackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="0,50,0,0">
+            <Frame CornerRadius="10" BackgroundColor="Black" Padding="140,20">
+                <Label x:Name="Total" FontSize="24" FontAttributes="Bold" Text="Total:" TextColor="Red"  />
+            </Frame>
+        </HorizontalStackLayout>
+
+
+
+
+    </StackLayout>
+</ContentPage>

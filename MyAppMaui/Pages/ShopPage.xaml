@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyAppMaui.Pages.ShopPage"
+             Title="ShopPage" 
+             NavigationPage.HasNavigationBar="False">
+
+    
+    <StackLayout BackgroundColor="White">
+
+        <!-- Yatay (horizontal) StackLayout -->
+        <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="red">
+            <!-- Yatay StackLayout içindeki yazı -->
+            <Label Text="Emre Çınar" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" FontSize="24" FontAttributes="Bold" />
+        </StackLayout>
+        <Label Text="CPU" FontSize="Large" FontAttributes="Bold" Margin="0,5,0,0"/>
+        <StackLayout Orientation="Vertical">
+            <RadioButton x:Name="cpubutt1" CheckedChanged="cpubutt1_CheckedChanged"  />
+            <Label Text="CORE i3" VerticalOptions="Center" HorizontalOptions="Start" Margin="5,0,0,0" />
+            <RadioButton x:Name="cpubutt2" CheckedChanged="cpubutt2_CheckedChanged"/>
+            <Label Text="CORE i5" VerticalOptions="Center" HorizontalOptions="Start" Margin="5,0,0,0"  />
+            <RadioButton x:Name="cpubutt3" CheckedChanged="cpubutt3_CheckedChanged"/>
+            <Label Text="CORE i7" VerticalOptions="Center" HorizontalOptions="Start"  Margin="5,0,0,0" />
+            <RadioButton x:Name="cpubutt4" CheckedChanged="cpubutt4_CheckedChanged"/>
+            <Label Text="CORE i9" VerticalOptions="Center" HorizontalOptions="Start" Margin="5,0,0,0"  />
+
+        </StackLayout>
+        <Label Text="Storage " FontSize="Large" FontAttributes="Bold" />
+        <StackLayout Orientation="Horizontal">
+
+            <RadioButton x:Name="stbutt1" CheckedChanged="stbutt1_CheckedChanged"/>
+            <Label Text="SSD" VerticalOptions="Center" HorizontalOptions="Start" Margin="5,0,5,0" />
+            <RadioButton x:Name="stbutt2" CheckedChanged="stbutt2_CheckedChanged"/>
+            <Label Text="HDD" VerticalOptions="Center" HorizontalOptions="Start" Margin="5,0,5,0" />
+            
+        </StackLayout>
+        <Label Text="Monitor" FontSize="Large" FontAttributes="Bold" Margin="0,5,0,0"/>
+        <StackLayout Orientation="Horizontal" >
+           
+            <RadioButton x:Name="mnbutt1" CheckedChanged="mnbutt1_CheckedChanged"/>
+            <Label Text="Philips" VerticalOptions="Center" HorizontalOptions="Start" Margin="5,0,5,0" />
+            <RadioButton x:Name="mnbutt2" CheckedChanged="mnbutt2_CheckedChanged"/>
+            <Label Text="Samsung" VerticalOptions="Center" HorizontalOptions="Start" Margin="5,0,5,0" />
+            <RadioButton x:Name="mnbutt3" CheckedChanged="mnbutt3_CheckedChanged"/>
+            <Label Text="Asus" VerticalOptions="Center" HorizontalOptions="Start" Margin="5,0,5,0" />
+        </StackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="0,50,0,0">
+            <Frame CornerRadius="10" BackgroundColor="Black" Padding="140,20">
+                <Label x:Name="Total2" FontSize="24" FontAttributes="Bold" Text="Total:" TextColor="Red"  />
+            </Frame>
+        </HorizontalStackLayout>
+
+    </StackLayout>
+    
+    
+</ContentPage>

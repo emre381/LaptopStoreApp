@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyAppMaui.Pages.PaymentPage"
+             Title="PaymentPage"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+        <StackLayout>
+            <Frame CornerRadius="10" BackgroundColor="Red" Padding="10" >
+                <Label Text="Cardholder Name" FontSize="Large" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+            </Frame>
+        </StackLayout>
+        <StackLayout>
+            <Frame CornerRadius="10" BackgroundColor="Black" Padding="10">
+             
+                <Entry x:Name="CardName" Placeholder="Dot Net Bot" FontSize="24" FontAttributes="Bold" TextColor="White"/>
+            </Frame>
+        </StackLayout>
+
+        <StackLayout>
+            <Frame CornerRadius="10" BackgroundColor="Red" Padding="10" >
+                <Label Text="Card No:" FontSize="Large" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+            </Frame>
+        </StackLayout>
+        <StackLayout>
+            <Frame CornerRadius="10" BackgroundColor="Black" Padding="10">
+
+                <Entry x:Name="CardNo" Placeholder="xxxx-xxxx-xxxx-xxxx" FontSize="24" FontAttributes="Bold" TextColor="White"/>
+            </Frame>
+        </StackLayout>
+
+        <HorizontalStackLayout Margin="0,20,0,0">
+            <Frame HorizontalOptions="Start" Margin="0,0,0,0" BackgroundColor="Red">
+            <Label Text="Date" HorizontalOptions="Center" FontSize="24" FontAttributes="Bold"  />
+            </Frame>
+            
+            <Frame HorizontalOptions="Center" Margin="200,0,0,0"  BackgroundColor="Red">
+            <Label Text="CVV" HorizontalOptions="Center" FontSize="24" FontAttributes="Bold" />
+            </Frame>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Entry  Margin="10,0,0,0"/>
+            <Entry Margin="285,0,0,0" />
+        </HorizontalStackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <RadioButton x:Name="radiCache" Grid.Row="0"/>
+            <Label Text="Cache" Grid.Row="0" Margin="35,0,0,0" VerticalOptions="Center" TextColor="Black" FontAttributes="Bold" FontSize="Large" />
+
+            <RadioButton x:Name="radiInst" Grid.Row="1"/>
+            <Label Text="Installaments" Grid.Row="1" Margin="35,0,0,0" VerticalOptions="Center" TextColor="Black" FontAttributes="Bold" FontSize="Large"/>
+        </Grid>
+
+        <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="0,50,0,0">
+            <Frame CornerRadius="10" BackgroundColor="Black" Padding="150,20">
+                <Label x:Name="Total2" FontSize="24" FontAttributes="Bold" Text="Total:" TextColor="Red"  />
+            </Frame>
+            
+        </HorizontalStackLayout>
+
+
+
+    </StackLayout>
+</ContentPage>
